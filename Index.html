@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Tabungan</title>
+
+    <!-- Menghubungkan CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>💰 Aplikasi Tabungan</h1>
+            <p>Kelola tabungan Anda dengan mudah</p>
+        </header>
+
+        <!-- Saldo -->
+        <div class="saldo-card">
+            <h3>Saldo Saat Ini</h3>
+            <h2 id="saldo">Rp 0</h2>
+        </div>
+
+        <!-- Ringkasan -->
+        <div class="summary">
+            <div class="summary-card masuk">
+                <h3>Total Setoran</h3>
+                <p id="totalSetoran">Rp 0</p>
+            </div>
+
+            <div class="summary-card keluar">
+                <h3>Total Penarikan</h3>
+                <p id="totalPenarikan">Rp 0</p>
+            </div>
+        </div>
+
+        <!-- Form transaksi -->
+        <div class="form-card">
+            <h2>Tambah Transaksi</h2>
+
+            <form id="formTransaksi">
+                <div class="form-group">
+                    <label for="jenis">Jenis Transaksi</label>
+                    <select id="jenis" required>
+                        <option value="setoran">Setoran</option>
+                        <option value="penarikan">Penarikan</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="jumlah">Jumlah</label>
+                    <input
+                        type="number"
+                        id="jumlah"
+                        placeholder="Masukkan jumlah uang"
+                        min="1"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="keterangan">Keterangan</label>
+                    <input
+                        type="text"
+                        id="keterangan"
+                        placeholder="Contoh: Tabungan harian"
+                    >
+                </div>
+
+                <button type="submit">Tambah Transaksi</button>
+            </form>
+        </div>
+
+        <!-- Riwayat -->
+        <div class="history-card">
+            <h2>Riwayat Transaksi</h2>
+
+            <div id="riwayat">
+                <p class="empty">Belum ada transaksi.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Menghubungkan JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

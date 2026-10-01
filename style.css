@@ -1,0 +1,222 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    padding: 30px 15px;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #64748b;
+}
+
+/* Saldo */
+.saldo-card {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.saldo-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.saldo-card h2 {
+    font-size: 35px;
+}
+
+/* Summary */
+.summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.summary-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.summary-card h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.summary-card p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.masuk {
+    border-left: 5px solid #16a34a;
+}
+
+.masuk p {
+    color: #16a34a;
+}
+
+.keluar {
+    border-left: 5px solid #dc2626;
+}
+
+.keluar p {
+    color: #dc2626;
+}
+
+/* Card */
+.form-card,
+.history-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.form-card h2,
+.history-card h2 {
+    margin-bottom: 20px;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #2563eb;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Riwayat transaksi */
+.transaksi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.transaksi:last-child {
+    border-bottom: none;
+}
+
+.transaksi-info h4 {
+    margin-bottom: 5px;
+}
+
+.transaksi-info small {
+    color: #64748b;
+}
+
+.nominal {
+    font-weight: bold;
+}
+
+.nominal.setoran {
+    color: #16a34a;
+}
+
+.nominal.penarikan {
+    color: #dc2626;
+}
+
+.empty {
+    text-align: center;
+    color: #64748b;
+    padding: 20px;
+}
+
+/* Tombol hapus */
+.btn-hapus {
+    width: auto;
+    padding: 6px 10px;
+    margin-left: 10px;
+    background-color: #dc2626;
+    font-size: 12px;
+}
+
+.btn-hapus:hover {
+    background-color: #b91c1c;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+    .saldo-card h2 {
+        font-size: 28px;
+    }
+
+    .transaksi {
+        align-items: flex-start;
+    }
+}
